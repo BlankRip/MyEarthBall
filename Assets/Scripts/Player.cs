@@ -17,7 +17,7 @@ public class Player : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         rotationInputs = new Vector3(0, Input.GetAxisRaw("Horizontal"), 0) * rotationSpeed;
         rb.rotation *= Quaternion.Euler(rotationInputs);
